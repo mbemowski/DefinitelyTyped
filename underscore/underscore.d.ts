@@ -5417,30 +5417,30 @@ interface _Chain<T> {
 	/**
 	* @see _.findIndex
 	**/
-	findIndex<T>(predicate: _.ListIterator<T, boolean>, context?: any): _Chain<T>;
+	findIndex<T>(predicate: _.ListIterator<T, boolean>, context?: any): _ChainSingle<number>;
 
 	/**
 	* @see _.findLastIndex
 	**/
-	findLastIndex<T>(predicate: _.ListIterator<T, boolean>, context?: any): _Chain<T>;
+	findLastIndex<T>(predicate: _.ListIterator<T, boolean>, context?: any): _ChainSingle<number>;
 
 	/**
 	* Wrapped type `any[]`.
 	* @see _.sortedIndex
 	**/
-	sortedIndex(value: T, iterator?: (x: T) => any, context?: any): _Chain<T>;
+	sortedIndex(value: T, iterator?: (x: T) => any, context?: any): _ChainSingle<number>;
 
 	/**
 	* Wrapped type `number`.
 	* @see _.range
 	**/
-	range(stop: number, step?: number): _Chain<T>;
+	range(stop: number, step?: number): _Chain<number>;
 
 	/**
 	* Wrapped type `number`.
 	* @see _.range
 	**/
-	range(): _Chain<T>;
+	range(): _Chain<number>;
 
 	/* ***********
 	 * Functions *
